@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#121417">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Torque & mm">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iOTAiIGZpbGw9IiMxYzIxMjgiIHN0cm9rZT0iIzMwMzYzZCIgc3Ryb2tlLXdpZHRoPSI4Ii8+CiAgPHBhdGggZD0iTTE2NCAzMTIgQSAxMzAgMTMwIDAgMSAxIDM0OCAzMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMwMzYzZCIgc3Ryb2tlLXdpZHRoPSIxOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTE2NCAzMTIgQSAxMzAgMTMwIDAgMSAxIDM2OCAxNTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSIxOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBvbHlnb24gcG9pbnRzPSIyNTYsMTU1IDMxMiwxODcgMzEyLDI1MyAyNTYsMjg1IDIwMCwyNTMgMjAwLDE4NyIgZmlsbD0iIzE2MWIyMiIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjYiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyMjAiIHI9IjMyIiBmaWxsPSJub25lIiBzdHJva2U9IiMzOGJkZjgiIHN0cm9rZS13aWR0aD0iNSIvPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjIyMCIgcj0iMTYiIGZpbGw9IiMzOGJkZjgiLz4KICA8cmVjdCB4PSI2MCIgeT0iMzcwIiB3aWR0aD0iMzkyIiBoZWlnaHQ9IjYwIiByeD0iMTIiIGZpbGw9IiMwZDExMTciIHN0cm9rZT0iIzMwMzYzZCIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGxpbmUgeDE9IjkwIiB5MT0iMzc0IiB4Mj0iOTAiIHkyPSIzOTQiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGxpbmUgeDE9IjE0NSIgeTE9IjM3NCIgeDI9IjE0NSIgeTI9IjM5NCIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8bGluZSB4MT0iMjAwIiB5MT0iMzc0IiB4Mj0iMjAwIiB5Mj0iMzk0IiBzdHJva2U9IiNmNTllMGIiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxsaW5lIHgxPSIyNTYiIHkxPSIzNzQiIHgyPSIyNTYiIHkyPSIzOTQiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGxpbmUgeDE9IjMxMiIgeTE9IjM3NCIgeDI9IjMxMiIgeTI9IjM5NCIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8bGluZSB4MT0iMzY3IiB5MT0iMzc0IiB4Mj0iMzY3IiB5Mj0iMzk0IiBzdHJva2U9IiNmNTllMGIiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxsaW5lIHgxPSI0MjIiIHkxPSIzNzQiIHgyPSI0MjIiIHkyPSIzOTQiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGxpbmUgeDE9IjgwIiB5MT0iNDI2IiB4Mj0iODAiIHkyPSI0MDgiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGxpbmUgeDE9IjExNSIgeTE9IjQyNiIgeDI9IjExNSIgeTI9IjQxNCIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiLz4KICA8bGluZSB4MT0iMTUwIiB5MT0iNDI2IiB4Mj0iMTUwIiB5Mj0iNDA4IiBzdHJva2U9IiMzOGJkZjgiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxsaW5lIHgxPSIxODUiIHkxPSI0MjYiIHgyPSIxODUiIHkyPSI0MTQiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGxpbmUgeDE9IjIyMCIgeTE9IjQyNiIgeDI9IjIyMCIgeTI9IjQwOCIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiLz4KICA8bGluZSB4MT0iMjU2IiB5MT0iNDI2IiB4Mj0iMjU2IiB5Mj0iNDE0IiBzdHJva2U9IiMzOGJkZjgiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxsaW5lIHgxPSIyOTEiIHkxPSI0MjYiIHgyPSIyOTEiIHkyPSI0MDgiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGxpbmUgeDE9IjMyNiIgeTE9IjQyNiIgeDI9IjMyNiIgeTI9IjQxNCIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiLz4KICA8bGluZSB4MT0iMzYxIiB5MT0iNDI2IiB4Mj0iMzYxIiB5Mj0iNDA4IiBzdHJva2U9IiMzOGJkZjgiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxsaW5lIHgxPSIzOTYiIHkxPSI0MjYiIHgyPSIzOTYiIHkyPSI0MTQiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGxpbmUgeDE9IjQzMiIgeTE9IjQyNiIgeDI9IjQzMiIgeTI9IjQwOCIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiLz4KPC9zdmc+">
+  <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iOTAiIGZpbGw9IiMxYzIxMjgiIHN0cm9rZT0iIzMwMzYzZCIgc3Ryb2tlLXdpZHRoPSI4Ii8+CiAgPHBhdGggZD0iTTE2NCAzMTIgQSAxMzAgMTMwIDAgMSAxIDM0OCAzMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMwMzYzZCIgc3Ryb2tlLXdpZHRoPSIxOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTE2NCAzMTIgQSAxMzAgMTMwIDAgMSAxIDM2OCAxNTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSIxOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBvbHlnb24gcG9pbnRzPSIyNTYsMTU1IDMxMiwxODcgMzEyLDI1MyAyNTYsMjg1IDIwMCwyNTMgMjAwLDE4NyIgZmlsbD0iIzE2MWIyMiIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjYiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyMjAiIHI9IjMyIiBmaWxsPSJub25lIiBzdHJva2U9IiMzOGJkZjgiIHN0cm9rZS13aWR0aD0iNSIvPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjIyMCIgcj0iMTYiIGZpbGw9IiMzOGJkZjgiLz4KICA8cmVjdCB4PSI2MCIgeT0iMzcwIiB3aWR0aD0iMzkyIiBoZWlnaHQ9IjYwIiByeD0iMTIiIGZpbGw9IiMwZDExMTciIHN0cm9rZT0iIzMwMzYzZCIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGxpbmUgeDE9IjkwIiB5MT0iMzc0IiB4Mj0iOTAiIHkyPSIzOTQiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGxpbmUgeDE9IjE0NSIgeTE9IjM3NCIgeDI9IjE0NSIgeTI9IjM5NCIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8bGluZSB4MT0iMjAwIiB5MT0iMzc0IiB4Mj0iMjAwIiB5Mj0iMzk0IiBzdHJva2U9IiNmNTllMGIiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxsaW5lIHgxPSIyNTYiIHkxPSIzNzQiIHgyPSIyNTYiIHkyPSIzOTQiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGxpbmUgeDE9IjMxMiIgeTE9IjM3NCIgeDI9IjMxMiIgeTI9IjM5NCIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8bGluZSB4MT0iMzY3IiB5MT0iMzc0IiB4Mj0iMzY3IiB5Mj0iMzk0IiBzdHJva2U9IiNmNTllMGIiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxsaW5lIHgxPSI0MjIiIHkxPSIzNzQiIHgyPSI0MjIiIHkyPSIzOTQiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGxpbmUgeDE9IjgwIiB5MT0iNDI2IiB4Mj0iODAiIHkyPSI0MDgiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGxpbmUgeDE9IjExNSIgeTE9IjQyNiIgeDI9IjExNSIgeTI9IjQxNCIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiLz4KICA8bGluZSB4MT0iMTUwIiB5MT0iNDI2IiB4Mj0iMTUwIiB5Mj0iNDA4IiBzdHJva2U9IiMzOGJkZjgiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxsaW5lIHgxPSIxODUiIHkxPSI0MjYiIHgyPSIxODUiIHkyPSI0MTQiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGxpbmUgeDE9IjIyMCIgeTE9IjQyNiIgeDI9IjIyMCIgeTI9IjQwOCIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiLz4KICA8bGluZSB4MT0iMjU2IiB5MT0iNDI2IiB4Mj0iMjU2IiB5Mj0iNDE0IiBzdHJva2U9IiMzOGJkZjgiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxsaW5lIHgxPSIyOTEiIHkxPSI0MjYiIHgyPSIyOTEiIHkyPSI0MDgiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGxpbmUgeDE9IjMyNiIgeTE9IjQyNiIgeDI9IjMyNiIgeTI9IjQxNCIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiLz4KICA8bGluZSB4MT0iMzYxIiB5MT0iNDI2IiB4Mj0iMzYxIiB5Mj0iNDA4IiBzdHJva2U9IiMzOGJkZjgiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxsaW5lIHgxPSIzOTYiIHkxPSI0MjYiIHgyPSIzOTYiIHkyPSI0MTQiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGxpbmUgeDE9IjQzMiIgeTE9IjQyNiIgeDI9IjQzMiIgeTI9IjQwOCIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiLz4KPC9zdmc+">
+  <title>Taller Industrial: mm a Pulgadas & Torque de Pernos</title>
+  <style>
+    :root {
+      --bg: #121417;
+      --card-bg: #1c2128;
+      --card-border: #30363d;
+      --primary: #f59e0b;
+      --primary-hover: #d97706;
+      --text: #f0f6fc;
+      --text-muted: #8b949e;
+      --accent: #38bdf8;
+      --success: #22c55e;
+      --danger: #ef4444;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 16px;
+      padding-bottom: 48px;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .header img {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+    }
+    .header-text h1 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .header-text p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+    .nav-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 18px;
+      background: #0d1117;
+      padding: 5px;
+      border-radius: 12px;
+      border: 1px solid var(--card-border);
+    }
+    .tab-btn {
+      flex: 1;
+      padding: 12px 6px;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 700;
+      border-radius: 9px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn.active {
+      background: var(--card-bg);
+      color: var(--primary);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.45);
+    }
+    .tab-pane {
+      display: none;
+    }
+    .tab-pane.active {
+      display: block;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.28);
+    }
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .form-group {
+      margin-bottom: 14px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    input[type="number"], select {
+      width: 100%;
+      padding: 13px;
+      background: #0d1117;
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      color: var(--text);
+      font-size: 1.15rem;
+      font-weight: 700;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input[type="number"]:focus, select:focus {
+      border-color: var(--primary);
+    }
+    .quick-buttons {
+      display: flex;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .btn-quick {
+      flex: 1;
+      padding: 10px 4px;
+      background: #21262d;
+      border: 1px solid var(--card-border);
+      color: var(--text);
+      font-size: 0.85rem;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .btn-quick:active {
+      background: var(--primary);
+      color: #000;
+    }
+    .result-box {
+      background: #0d1117;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      margin-top: 12px;
+    }
+    .result-box .label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+    .result-box .value-main {
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin: 4px 0;
+    }
+    .result-box .value-sub {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .metric-pill {
+      background: #161b22;
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+    }
+    .metric-pill .p-label {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .metric-pill .p-val {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      margin-top: 4px;
+    }
+    .badge-diff {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+    .badge-diff.exact {
+      background: rgba(34, 197, 94, 0.2);
+      color: var(--success);
+      border: 1px solid var(--success);
+    }
+    .badge-diff.approx {
+      background: rgba(245, 158, 11, 0.2);
+      color: var(--primary);
+      border: 1px solid var(--primary);
+    }
+    .banner-warning {
+      background: rgba(239, 68, 68, 0.14);
+      border: 1px solid var(--danger);
+      color: #fca5a5;
+      font-size: 0.78rem;
+      padding: 11px;
+      border-radius: 10px;
+      margin-top: 14px;
+      line-height: 1.4;
+    }
+    .quick-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 0.82rem;
+    }
+    .quick-table th, .quick-table td {
+      padding: 9px 6px;
+      text-align: center;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .quick-table th {
+      background: #0d1117;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+    .quick-table tr:active {
+      background: #21262d;
+    }
+    .status-offline {
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--success);
+      margin-top: 14px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iOTAiIGZpbGw9IiMxYzIxMjgiIHN0cm9rZT0iIzMwMzYzZCIgc3Ryb2tlLXdpZHRoPSI4Ii8+CiAgPHBhdGggZD0iTTE2NCAzMTIgQSAxMzAgMTMwIDAgMSAxIDM0OCAzMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMwMzYzZCIgc3Ryb2tlLXdpZHRoPSIxOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTE2NCAzMTIgQSAxMzAgMTMwIDAgMSAxIDM2OCAxNTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSIxOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBvbHlnb24gcG9pbnRzPSIyNTYsMTU1IDMxMiwxODcgMzEyLDI1MyAyNTYsMjg1IDIwMCwyNTMgMjAwLDE4NyIgZmlsbD0iIzE2MWIyMiIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjYiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyMjAiIHI9IjMyIiBmaWxsPSJub25lIiBzdHJva2U9IiMzOGJkZjgiIHN0cm9rZS13aWR0aD0iNSIvPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjIyMCIgcj0iMTYiIGZpbGw9IiMzOGJkZjgiLz4KICA8cmVjdCB4PSI2MCIgeT0iMzcwIiB3aWR0aD0iMzkyIiBoZWlnaHQ9IjYwIiByeD0iMTIiIGZpbGw9IiMwZDExMTciIHN0cm9rZT0iIzMwMzYzZCIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGxpbmUgeDE9IjkwIiB5MT0iMzc0IiB4Mj0iOTAiIHkyPSIzOTQiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGxpbmUgeDE9IjE0NSIgeTE9IjM3NCIgeDI9IjE0NSIgeTI9IjM5NCIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8bGluZSB4MT0iMjAwIiB5MT0iMzc0IiB4Mj0iMjAwIiB5Mj0iMzk0IiBzdHJva2U9IiNmNTllMGIiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxsaW5lIHgxPSIyNTYiIHkxPSIzNzQiIHgyPSIyNTYiIHkyPSIzOTQiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGxpbmUgeDE9IjMxMiIgeTE9IjM3NCIgeDI9IjMxMiIgeTI9IjM5NCIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8bGluZSB4MT0iMzY3IiB5MT0iMzc0IiB4Mj0iMzY3IiB5Mj0iMzk0IiBzdHJva2U9IiNmNTllMGIiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxsaW5lIHgxPSI0MjIiIHkxPSIzNzQiIHgyPSI0MjIiIHkyPSIzOTQiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGxpbmUgeDE9IjgwIiB5MT0iNDI2IiB4Mj0iODAiIHkyPSI0MDgiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGxpbmUgeDE9IjExNSIgeTE9IjQyNiIgeDI9IjExNSIgeTI9IjQxNCIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiLz4KICA8bGluZSB4MT0iMTUwIiB5MT0iNDI2IiB4Mj0iMTUwIiB5Mj0iNDA4IiBzdHJva2U9IiMzOGJkZjgiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxsaW5lIHgxPSIxODUiIHkxPSI0MjYiIHgyPSIxODUiIHkyPSI0MTQiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGxpbmUgeDE9IjIyMCIgeTE9IjQyNiIgeDI9IjIyMCIgeTI9IjQwOCIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiLz4KICA8bGluZSB4MT0iMjU2IiB5MT0iNDI2IiB4Mj0iMjU2IiB5Mj0iNDE0IiBzdHJva2U9IiMzOGJkZjgiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxsaW5lIHgxPSIyOTEiIHkxPSI0MjYiIHgyPSIyOTEiIHkyPSI0MDgiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGxpbmUgeDE9IjMyNiIgeTE9IjQyNiIgeDI9IjMyNiIgeTI9IjQxNCIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiLz4KICA8bGluZSB4MT0iMzYxIiB5MT0iNDI2IiB4Mj0iMzYxIiB5Mj0iNDA4IiBzdHJva2U9IiMzOGJkZjgiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxsaW5lIHgxPSIzOTYiIHkxPSI0MjYiIHgyPSIzOTYiIHkyPSI0MTQiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGxpbmUgeDE9IjQzMiIgeTE9IjQyNiIgeDI9IjQzMiIgeTI9IjQwOCIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiLz4KPC9zdmc+" alt="Icono Taller">
+    <div class="header-text">
+      <h1>Herramientas de Taller</h1>
+      <p>Conversor mm ↔ Pulgadas & Torque Pernos</p>
+    </div>
+  </div>
+
+  <div class="nav-tabs">
+    <button class="tab-btn active" onclick="setTab('conv')">📏 mm ➔ Pulgadas</button>
+    <button class="tab-btn" onclick="setTab('torque')">🔩 Calculador Torque</button>
+  </div>
+
+  <!-- TAB 1: CONVERSOR -->
+  <div id="tab-conv" class="tab-pane active">
+    <div class="card">
+      <div class="card-title">
+        <span>Medida en Milímetros</span>
+        <button class="btn-quick" style="flex:0; padding:4px 10px; font-size:0.75rem;" onclick="resetMm()">Limpiar</button>
+      </div>
+      <div class="form-group">
+        <label for="mmInput">Milímetros (mm):</label>
+        <input type="number" id="mmInput" value="19.05" step="0.01" inputmode="decimal" oninput="calcConversion()">
+        <div class="quick-buttons">
+          <button class="btn-quick" onclick="adjMm(-1)">-1</button>
+          <button class="btn-quick" onclick="adjMm(-0.1)">-0.1</button>
+          <button class="btn-quick" onclick="adjMm(0.1)">+0.1</button>
+          <button class="btn-quick" onclick="adjMm(1)">+1</button>
+          <button class="btn-quick" onclick="adjMm(10)">+10</button>
+        </div>
+      </div>
+
+      <div class="result-box">
+        <div class="label">Fracción comercial (base 64)</div>
+        <div class="value-main" id="resFrac">3/4"</div>
+        <div class="value-sub" id="resDec">0.7500"</div>
+        <div id="resBadge" class="badge-diff exact">Exacto (Δ 0.00 mm)</div>
+      </div>
+
+      <div class="grid-2">
+        <div class="metric-pill">
+          <div class="p-label">Decimal Exacto</div>
+          <div class="p-val" id="resDecExact">0.750 in</div>
+        </div>
+        <div class="metric-pill">
+          <div class="p-label">Equiv. Fracción</div>
+          <div class="p-val" id="resFracMm">19.05 mm</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span>Equivalencias Rápidas</span></div>
+      <table class="quick-table">
+        <thead>
+          <tr>
+            <th>Pulgada</th>
+            <th>Decimal</th>
+            <th>Milímetros</th>
+            <th>Cargar</th>
+          </tr>
+        </thead>
+        <tbody id="quickTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- TAB 2: TORQUE -->
+  <div id="tab-torque" class="tab-pane">
+    <div class="card">
+      <div class="card-title"><span>Parámetros del Perno</span></div>
+
+      <div class="form-group">
+        <label for="boltStd">Estándar / Norma:</label>
+        <select id="boltStd" onchange="setupBoltOptions()">
+          <option value="metric">Métrico (ISO 898-1)</option>
+          <option value="sae">Imperial UNC (SAE J429)</option>
+        </select>
+      </div>
+
+      <div class="grid-2">
+        <div class="form-group">
+          <label for="boltDia">Diámetro:</label>
+          <select id="boltDia" onchange="calcTorque()"></select>
+        </div>
+        <div class="form-group">
+          <label for="boltGrade">Grado / Clase:</label>
+          <select id="boltGrade" onchange="calcTorque()"></select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="boltLub">Condición de Fricción / Lubricación:</label>
+        <select id="boltLub" onchange="calcTorque()">
+          <option value="0.20">Seco / Cincado (K = 0.20)</option>
+          <option value="0.15" selected>Aceitado / Aceite ligero (K = 0.15)</option>
+          <option value="0.12">Moly / Pasta Antigripante (K = 0.12)</option>
+        </select>
+      </div>
+
+      <div class="result-box">
+        <div class="label">Torque Recomendado (Objetivo)</div>
+        <div class="value-main" id="resTorqueNm">-- N·m</div>
+        <div class="value-sub" id="resTorqueLbFt">-- lb·ft</div>
+      </div>
+
+      <div class="grid-2">
+        <div class="metric-pill">
+          <div class="p-label">Rango Seguro (±5%)</div>
+          <div class="p-val" id="resRange" style="font-size: 0.92rem;">--</div>
+        </div>
+        <div class="metric-pill">
+          <div class="p-label">Dado / Llave Hex</div>
+          <div class="p-val" id="resSocket">--</div>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-top: 10px;">
+        <div class="metric-pill">
+          <div class="p-label">Torque en lb·in</div>
+          <div class="p-val" id="resTorqueLbIn">--</div>
+        </div>
+        <div class="metric-pill">
+          <div class="p-label">Precarga Estimada</div>
+          <div class="p-val" id="resPreload">-- kN</div>
+        </div>
+      </div>
+
+      <div class="banner-warning">
+        ⚠️ <strong>Precaución en Terreno:</strong> La lubricación reduce la fricción. Aplicar torque en seco sobre hilos con pasta antigripante (K=0.12) puede estirar o cortar el perno.
+      </div>
+    </div>
+  </div>
+
+  <div class="status-offline">● Listo para operación 100% sin conexión</div>
+
+  <script>
+    // Registro dinámico de Web App Manifest para PWA
+    const manifestObj = {
+      name: "Calculadora Taller: mm a Pulgadas & Torque",
+      short_name: "Torque & mm",
+      start_url: ".",
+      display: "standalone",
+      background_color: "#121417",
+      theme_color: "#121417",
+      icons: [{
+        src: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iOTAiIGZpbGw9IiMxYzIxMjgiIHN0cm9rZT0iIzMwMzYzZCIgc3Ryb2tlLXdpZHRoPSI4Ii8+CiAgPHBhdGggZD0iTTE2NCAzMTIgQSAxMzAgMTMwIDAgMSAxIDM0OCAzMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMwMzYzZCIgc3Ryb2tlLXdpZHRoPSIxOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTE2NCAzMTIgQSAxMzAgMTMwIDAgMSAxIDM2OCAxNTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSIxOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBvbHlnb24gcG9pbnRzPSIyNTYsMTU1IDMxMiwxODcgMzEyLDI1MyAyNTYsMjg1IDIwMCwyNTMgMjAwLDE4NyIgZmlsbD0iIzE2MWIyMiIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjYiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyMjAiIHI9IjMyIiBmaWxsPSJub25lIiBzdHJva2U9IiMzOGJkZjgiIHN0cm9rZS13aWR0aD0iNSIvPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjIyMCIgcj0iMTYiIGZpbGw9IiMzOGJkZjgiLz4KICA8cmVjdCB4PSI2MCIgeT0iMzcwIiB3aWR0aD0iMzkyIiBoZWlnaHQ9IjYwIiByeD0iMTIiIGZpbGw9IiMwZDExMTciIHN0cm9rZT0iIzMwMzYzZCIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGxpbmUgeDE9IjkwIiB5MT0iMzc0IiB4Mj0iOTAiIHkyPSIzOTQiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGxpbmUgeDE9IjE0NSIgeTE9IjM3NCIgeDI9IjE0NSIgeTI9IjM5NCIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8bGluZSB4MT0iMjAwIiB5MT0iMzc0IiB4Mj0iMjAwIiB5Mj0iMzk0IiBzdHJva2U9IiNmNTllMGIiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxsaW5lIHgxPSIyNTYiIHkxPSIzNzQiIHgyPSIyNTYiIHkyPSIzOTQiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGxpbmUgeDE9IjMxMiIgeTE9IjM3NCIgeDI9IjMxMiIgeTI9IjM5NCIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8bGluZSB4MT0iMzY3IiB5MT0iMzc0IiB4Mj0iMzY3IiB5Mj0iMzk0IiBzdHJva2U9IiNmNTllMGIiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxsaW5lIHgxPSI0MjIiIHkxPSIzNzQiIHgyPSI0MjIiIHkyPSIzOTQiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGxpbmUgeDE9IjgwIiB5MT0iNDI2IiB4Mj0iODAiIHkyPSI0MDgiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGxpbmUgeDE9IjExNSIgeTE9IjQyNiIgeDI9IjExNSIgeTI9IjQxNCIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiLz4KICA8bGluZSB4MT0iMTUwIiB5MT0iNDI2IiB4Mj0iMTUwIiB5Mj0iNDA4IiBzdHJva2U9IiMzOGJkZjgiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxsaW5lIHgxPSIxODUiIHkxPSI0MjYiIHgyPSIxODUiIHkyPSI0MTQiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGxpbmUgeDE9IjIyMCIgeTE9IjQyNiIgeDI9IjIyMCIgeTI9IjQwOCIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiLz4KICA8bGluZSB4MT0iMjU2IiB5MT0iNDI2IiB4Mj0iMjU2IiB5Mj0iNDE0IiBzdHJva2U9IiMzOGJkZjgiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxsaW5lIHgxPSIyOTEiIHkxPSI0MjYiIHgyPSIyOTEiIHkyPSI0MDgiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGxpbmUgeDE9IjMyNiIgeTE9IjQyNiIgeDI9IjMyNiIgeTI9IjQxNCIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiLz4KICA8bGluZSB4MT0iMzYxIiB5MT0iNDI2IiB4Mj0iMzYxIiB5Mj0iNDA4IiBzdHJva2U9IiMzOGJkZjgiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxsaW5lIHgxPSIzOTYiIHkxPSI0MjYiIHgyPSIzOTYiIHkyPSI0MTQiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGxpbmUgeDE9IjQzMiIgeTE9IjQyNiIgeDI9IjQzMiIgeTI9IjQwOCIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiLz4KPC9zdmc+",
+        sizes: "512x512",
+        type: "image/svg+xml",
+        purpose: "any maskable"
+      }]
+    };
+    const manifestBlob = new Blob([JSON.stringify(manifestObj)], {type: 'application/json'});
+    const manifestURL = URL.createObjectURL(manifestBlob);
+    const linkEl = document.createElement('link');
+    linkEl.rel = 'manifest';
+    linkEl.href = manifestURL;
+    document.head.appendChild(linkEl);
+
+    function setTab(tab) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+      if (tab === 'conv') {
+        document.querySelectorAll('.tab-btn')[0].classList.add('active');
+        document.getElementById('tab-conv').classList.add('active');
+      } else {
+        document.querySelectorAll('.tab-btn')[1].classList.add('active');
+        document.getElementById('tab-torque').classList.add('active');
+        calcTorque();
+      }
+    }
+
+    function resetMm() {
+      document.getElementById('mmInput').value = '';
+      calcConversion();
+      document.getElementById('mmInput').focus();
+    }
+
+    function adjMm(delta) {
+      const el = document.getElementById('mmInput');
+      let val = parseFloat(el.value) || 0;
+      val = Math.max(0, val + delta);
+      el.value = (Math.round(val * 100) / 100).toFixed(2);
+      calcConversion();
+    }
+
+    function gcd(a, b) {
+      return b === 0 ? a : gcd(b, a % b);
+    }
+
+    function calcConversion() {
+      const mm = parseFloat(document.getElementById('mmInput').value) || 0;
+      const inches = mm / 25.4;
+      document.getElementById('resDecExact').innerText = inches.toFixed(3) + ' in';
+
+      const whole = Math.floor(inches);
+      const fracPart = inches - whole;
+      const frac64 = Math.round(fracPart * 64);
+
+      let fracStr = "";
+      let finalInchesFrac = whole;
+
+      if (frac64 === 64) {
+        fracStr = (whole + 1) + '"';
+        finalInchesFrac = whole + 1;
+      } else if (frac64 === 0) {
+        fracStr = whole > 0 ? whole + '"' : '0"';
+        finalInchesFrac = whole;
+      } else {
+        const div = gcd(frac64, 64);
+        const num = frac64 / div;
+        const den = 64 / div;
+        fracStr = (whole > 0 ? whole + " " : "") + num + "/" + den + '"';
+        finalInchesFrac = whole + (num / den);
+      }
+
+      document.getElementById('resFrac').innerText = fracStr;
+      document.getElementById('resDec').innerText = inches.toFixed(4) + '"';
+
+      const fracMm = finalInchesFrac * 25.4;
+      document.getElementById('resFracMm').innerText = fracMm.toFixed(2) + ' mm';
+
+      const diff = Math.abs(mm - fracMm);
+      const badge = document.getElementById('resBadge');
+      if (diff < 0.05) {
+        badge.className = 'badge-diff exact';
+        badge.innerText = `Exacto (Δ ${diff.toFixed(2)} mm)`;
+      } else {
+        badge.className = 'badge-diff approx';
+        badge.innerText = `Aprox. (Δ ${diff.toFixed(2)} mm)`;
+      }
+    }
+
+    const commonSizes = [
+      { f: '1/4"', d: 0.250, mm: 6.35 },
+      { f: '5/16"', d: 0.3125, mm: 7.94 },
+      { f: '3/8"', d: 0.375, mm: 9.52 },
+      { f: '7/16"', d: 0.4375, mm: 11.11 },
+      { f: '1/2"', d: 0.500, mm: 12.70 },
+      { f: '9/16"', d: 0.5625, mm: 14.29 },
+      { f: '5/8"', d: 0.625, mm: 15.88 },
+      { f: '3/4"', d: 0.750, mm: 19.05 },
+      { f: '7/8"', d: 0.875, mm: 22.22 },
+      { f: '1"', d: 1.000, mm: 25.40 },
+      { f: '1-1/8"', d: 1.125, mm: 28.58 },
+      { f: '1-1/4"', d: 1.250, mm: 31.75 },
+      { f: '1-1/2"', d: 1.500, mm: 38.10 }
+    ];
+
+    function renderQuickTable() {
+      const tbody = document.getElementById('quickTableBody');
+      tbody.innerHTML = commonSizes.map(s => `
+        <tr>
+          <td style="font-weight:bold; color:var(--primary);">${s.f}</td>
+          <td>${s.d.toFixed(3)}"</td>
+          <td>${s.mm.toFixed(2)} mm</td>
+          <td>
+            <button class="btn-quick" style="padding:4px 10px; font-size:0.75rem;" onclick="setFromTable(${s.mm})">Usar</button>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    function setFromTable(val) {
+      document.getElementById('mmInput').value = val;
+      calcConversion();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    const metricData = {
+      grades: [
+        { id: "4.6", name: "Clase 4.6 (Común)", proofMPa: 225 },
+        { id: "8.8", name: "Clase 8.8 (Alta Resistencia)", proofMPa: 600 },
+        { id: "10.9", name: "Clase 10.9 (Extra Alta)", proofMPa: 830 },
+        { id: "12.9", name: "Clase 12.9 (Máxima Resistencia)", proofMPa: 970 }
+      ],
+      bolts: [
+        { dia: "M6", d_mm: 6, area: 20.1, socket: "10 mm" },
+        { dia: "M8", d_mm: 8, area: 36.6, socket: "13 mm" },
+        { dia: "M10", d_mm: 10, area: 58.0, socket: "16 / 17 mm" },
+        { dia: "M12", d_mm: 12, area: 84.3, socket: "18 / 19 mm" },
+        { dia: "M14", d_mm: 14, area: 115, socket: "21 / 22 mm" },
+        { dia: "M16", d_mm: 16, area: 157, socket: "24 mm" },
+        { dia: "M18", d_mm: 18, area: 192, socket: "27 mm" },
+        { dia: "M20", d_mm: 20, area: 245, socket: "30 mm" },
+        { dia: "M22", d_mm: 22, area: 303, socket: "32 / 34 mm" },
+        { dia: "M24", d_mm: 24, area: 353, socket: "36 mm" },
+        { dia: "M27", d_mm: 27, area: 459, socket: "41 mm" },
+        { dia: "M30", d_mm: 30, area: 561, socket: "46 mm" },
+        { dia: "M36", d_mm: 36, area: 817, socket: "55 mm" },
+        { dia: "M42", d_mm: 42, area: 1121, socket: "65 mm" }
+      ]
+    };
+
+    const saeData = {
+      grades: [
+        { id: "G2", name: "Grado 2 (Sin marcas)", proofMPa: 379 },
+        { id: "G5", name: "Grado 5 (3 marcas)", proofMPa: 586 },
+        { id: "G8", name: "Grado 8 (6 marcas)", proofMPa: 827 },
+        { id: "A325", name: "ASTM A325 (Estructural)", proofMPa: 586 }
+      ],
+      bolts: [
+        { dia: '1/4"-20', d_mm: 6.35, area: 20.5, socket: '7/16"' },
+        { dia: '5/16"-18', d_mm: 7.94, area: 33.8, socket: '1/2"' },
+        { dia: '3/8"-16', d_mm: 9.53, area: 50.0, socket: '9/16"' },
+        { dia: '7/16"-14', d_mm: 11.11, area: 68.6, socket: '5/8"' },
+        { dia: '1/2"-13', d_mm: 12.70, area: 91.5, socket: '3/4"' },
+        { dia: '9/16"-12', d_mm: 14.29, area: 117.4, socket: '13/16"' },
+        { dia: '5/8"-11', d_mm: 15.88, area: 145.8, socket: '15/16"' },
+        { dia: '3/4"-10', d_mm: 19.05, area: 215.5, socket: '1-1/8"' },
+        { dia: '7/8"-9', d_mm: 22.23, area: 298.1, socket: '1-5/16"' },
+        { dia: '1"-8', d_mm: 25.40, area: 390.9, socket: '1-1/2"' },
+        { dia: '1-1/8"-7', d_mm: 28.58, area: 492.3, socket: '1-11/16"' },
+        { dia: '1-1/4"-7', d_mm: 31.75, area: 625.2, socket: '1-7/8"' },
+        { dia: '1-1/2"-6', d_mm: 38.10, area: 906.5, socket: '2-1/4"' }
+      ]
+    };
+
+    function setupBoltOptions() {
+      const std = document.getElementById('boltStd').value;
+      const diaSelect = document.getElementById('boltDia');
+      const gradeSelect = document.getElementById('boltGrade');
+      const data = std === 'metric' ? metricData : saeData;
+
+      diaSelect.innerHTML = data.bolts.map((b, i) => `<option value="${i}">${b.dia}</option>`).join('');
+      gradeSelect.innerHTML = data.grades.map(g => `<option value="${g.proofMPa}">${g.name}</option>`).join('');
+
+      if (std === 'metric') {
+        diaSelect.selectedIndex = 5; // M16
+        gradeSelect.selectedIndex = 1; // 8.8
+      } else {
+        diaSelect.selectedIndex = 7; // 3/4"
+        gradeSelect.selectedIndex = 2; // Grado 8
+      }
+
+      calcTorque();
+    }
+
+    function calcTorque() {
+      const std = document.getElementById('boltStd').value;
+      const diaIdx = parseInt(document.getElementById('boltDia').value) || 0;
+      const proofStrength = parseFloat(document.getElementById('boltGrade').value) || 600;
+      const K = parseFloat(document.getElementById('boltLub').value) || 0.15;
+
+      const data = std === 'metric' ? metricData : saeData;
+      const bolt = data.bolts[diaIdx];
+      if (!bolt) return;
+
+      const preloadN = 0.75 * bolt.area * proofStrength;
+      const d_m = bolt.d_mm / 1000.0;
+      const torqueNm = K * d_m * preloadN;
+
+      const torqueLbFt = torqueNm * 0.737562;
+      const torqueLbIn = torqueNm * 8.85075;
+      const preloadKN = preloadN / 1000.0;
+
+      const minNm = torqueNm * 0.95;
+      const maxNm = torqueNm * 1.05;
+
+      document.getElementById('resTorqueNm').innerText = Math.round(torqueNm) + ' N·m';
+      document.getElementById('resTorqueLbFt').innerText = Math.round(torqueLbFt) + ' lb·ft';
+      document.getElementById('resTorqueLbIn').innerText = Math.round(torqueLbIn) + ' lb·in';
+      document.getElementById('resRange').innerText = `${Math.round(minNm)} - ${Math.round(maxNm)} N·m`;
+      document.getElementById('resSocket').innerText = bolt.socket;
+      document.getElementById('resPreload').innerText = preloadKN.toFixed(1) + ' kN';
+    }
+
+    window.onload = function() {
+      calcConversion();
+      renderQuickTable();
+      setupBoltOptions();
+    };
+  </script>
+</body>
+</html>
